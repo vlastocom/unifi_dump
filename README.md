@@ -1,5 +1,7 @@
 # unifi_dump
 
+[![CI](https://github.com/vlastocom/unifi_dump/actions/workflows/ci.yml/badge.svg)](https://github.com/vlastocom/unifi_dump/actions/workflows/ci.yml)
+
 Decode a **UniFi Network site export** (`.unf`) into readable **JSON** — in pure
 Python, using only `openssl`. No `mongo-tools`, no `bsondump`, no `pymongo`, and
 no third-party Python packages.
