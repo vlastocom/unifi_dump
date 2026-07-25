@@ -1,0 +1,7 @@
+# unifi_dump has NO third-party Python dependencies — it uses only the
+# Python standard library (Python 3.8+). There is nothing to pip install.
+#
+# It does rely on two command-line tools being on your PATH:
+#   openssl   decrypts the .unf (AES-128-CBC)
+#   zip       OPTIONAL — Info-ZIP; only used as a fallback to repair the
+#             inner archive if Python's zipfile cannot read it directly

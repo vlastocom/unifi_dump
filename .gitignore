@@ -1,0 +1,15 @@
+# Never commit real UniFi backups or decoded dumps — they hold secrets in
+# cleartext (admin password, PSKs, private keys, SSH host keys).
+*.unf
+*.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Local dev virtualenv (used to run ruff / pytest)
+.venv/
+
+# Tooling caches
+.ruff_cache/
+.pytest_cache/

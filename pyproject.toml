@@ -1,0 +1,14 @@
+# Lint configuration for unifi_dump. Run with:  ruff check .
+# (ruff is a dev-only tool — the utility itself has no dependencies.)
+
+[tool.ruff]
+line-length = 99
+target-version = "py38"
+
+[tool.ruff.lint]
+# E/W pycodestyle, F pyflakes, I import-sorting, UP pyupgrade, B bugbear.
+select = ["E", "W", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests set sys.path before importing the module under test.
+"tests/*" = ["E402"]

@@ -1,0 +1,4 @@
+# Development-only tooling. The utility itself needs no PyPI packages, and the
+# test suite runs on the standard library (python3 -m unittest discover -s tests).
+ruff        # linter/formatter — configured in pyproject.toml [tool.ruff]
+# pytest    # optional: the unittest-based tests also run under pytest
